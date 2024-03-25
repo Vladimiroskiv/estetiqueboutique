@@ -1,4 +1,4 @@
-@import url(navbar.css);
+@import url(./navbar.css);
 *{
     margin:0;
     padding: 0;
@@ -200,7 +200,7 @@ section{
     }
 
     .menu-btn{
-        background: url(/images/menu.png) no-repeat;
+        background: url(../images/menu.png) no-repeat;
         background-size: 50px;
         background-position: center;
         width: 40px;
@@ -211,7 +211,7 @@ section{
 
     .menu-btn.active{
         z-index: 999;
-        background: url(/images/Close.png) no-repeat;
+        background: url(../images/Close.png) no-repeat;
         background-size: 40px;
         background-position: center;
         transition: 0.3s ease;
