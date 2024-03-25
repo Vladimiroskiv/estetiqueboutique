@@ -211,7 +211,7 @@ section{
 
     .menu-btn.active{
         z-index: 999;
-        background: url(../images/Close.png) no-repeat;
+        background: url(../images/close.png) no-repeat;
         background-size: 40px;
         background-position: center;
         transition: 0.3s ease;
