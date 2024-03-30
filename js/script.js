@@ -35,3 +35,20 @@ btns.forEach((btn, i) => {
         sliderNav(i);
     });
 });
+
+
+// cookie
+
+document.getElementById('cookieConsentButton').addEventListener('click', function() {
+    document.getElementById('cookieConsentContainer').style.display = 'none';
+    localStorage.setItem('cookieConsent', 'true');
+});
+
+
+window.onload = function() {
+    if(localStorage.getItem('cookieConsent') === 'true'){
+        document.getElementById('cookieConsentContainer').style.display = 'none';
+    } else {
+        document.getElementById('cookieConsentContainer').style.display = 'block';
+    }
+};

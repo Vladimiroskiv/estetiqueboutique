@@ -146,6 +146,31 @@ section{
     transition-property: clip-path;
 }
 
+/* Cookie */
+.cookie-consent-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0a2749d0;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.cookie-consent-btn {
+    color: #002b60;
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* end Cookie */
+
+
 @media (max-width: 1040px){
     header{
         padding: 12px 20px;
