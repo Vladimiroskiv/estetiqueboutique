@@ -134,6 +134,56 @@ section{
     transform: scale(1.2);
 }
 
+
+.content .highlight-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+.content .percentage {
+    font-size: 6em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.content .benefit {
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+.content .description {
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 2em;
+    
+}
+
+.content ul.treatments-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content ul.treatments-list li {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 3em;
+    display: flex; 
+    align-items: center; 
+}
+
+.content ul.treatments-list img {
+    margin-right: 50px; 
+    width: 70px; 
+    height: auto; 
+}
+
+
+
 .video-slide{
     position: absolute;
     width: 100%;
