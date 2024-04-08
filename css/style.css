@@ -27,7 +27,7 @@ section{
     z-index: 777;
     content: '';
     position: absolute;
-    background: #002b6050;
+    background: #002b6073;
     width: 100%;
     height: 100%;
     top: 0;
@@ -80,7 +80,7 @@ section{
 
 .home .media-icons a{
     color: white;
-    font-size: 1.6em;
+    font-size: 3em;
     transition: 0.3s ease;
 }
 
@@ -291,4 +291,111 @@ section{
         background-position: center;
         transition: 0.3s ease;
     }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 50px;
+    }
+
+    section {
+        padding: 50px;
+    }
+
+    .home .content {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .home .content h1 {
+        font-size: 2.5em;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .home .content p,
+    .home .content .description {
+        font-size: 1em;
+    }
+
+    .home .media-icons a {
+        font-size: 2em;
+    }
+
+    .content .highlight-section {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .content .percentage {
+        font-size: 4em;
+    }
+
+    .content .benefit {
+        font-size: 1.5em;
+    }
+
+    .content ul.treatments-list li {
+        font-size: 2em;
+    }
+
+    .home .video-slide.active {
+        clip-path: circle(100% at 50% 50%);
+    }
+
+    .menu-btn {
+        background-size: 30px;
+    }
+
+    .cookie-consent-container {
+        font-size: 0.8em;
+    }    
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    .home .content {
+        width: 95%;
+    }
+
+    .home .content h1 {
+        font-size: 2em;
+    }
+
+    .home .content p,
+    .home .content .description {
+        font-size: 0.9em;
+    }
+
+    .home .media-icons a {
+        font-size: 1.5em;
+    }
+
+    .content .percentage {
+        font-size: 3em;
+    }
+
+    .content .benefit {
+        font-size: 1.2em;
+    }
+
+    .content ul.treatments-list li {
+        font-size: 1.5em;
+    }
+
+    .cookie-consent-container {
+        padding: 5px;
+        font-size: 0.7em;
+    }
+
+    .cookie-consent-btn {
+        padding: 5px;
+    }    
 }
