@@ -1,0 +1,104 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 100px;
+    background-color: #001c3efa;
+}
+
+.maintenance-message {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: rgb(2, 0, 74);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+p {
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #000e4e;
+    background-color: #cc922f;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.back-button:hover {
+    background-color: #4a4ae6;
+    color: #ffffff;
+}
+
+.background-video {
+    position: fixed; 
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%; 
+    width: auto; 
+    height: auto; 
+    z-index: -100; 
+    object-fit: cover; 
+}
+
+.maintenance-message {
+    position: relative; 
+    z-index: 10; 
+    
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    body {
+        padding: 50px 20px; 
+    }
+
+    .maintenance-message {
+        margin: 20px auto;
+        padding: 15px; 
+    }
+
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    p {
+        font-size: 0.9rem; 
+    }
+
+    a.back-button {
+        padding: 8px 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 30px 10px; 
+    }
+
+    .maintenance-message {
+        padding: 10px; 
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.8rem; 
+    }
+
+    a.back-button {
+        font-size: 0.8rem; 
+    }
+}
