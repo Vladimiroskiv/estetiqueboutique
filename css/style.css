@@ -399,3 +399,100 @@ section{
         padding: 5px;
     }    
 }
+
+/* Start Blog */
+
+/* Stiluri specifice pentru blog */
+
+.blog-page {
+    min-height: 100vh; /* Întreaga înălțime a viewport-ului */
+    background-color: #001c3efa; /* Culoarea de fundal dorită */
+}
+
+.blog-container {
+    max-width: 1100px; /* Lățime maximă pentru conținut */
+    margin: auto; /* Centrează containerul */
+    padding: 50px 200px; /* Padding sus și jos și lățimea laterale */
+}
+
+.blog-posts {
+    margin-top: 50px; /* Spațiu suplimentar între navbar și postări */    
+    color: #ffffff; /* Textul postărilor în alb */
+}
+
+.blog-posts h1 {
+    margin-bottom: 30px;
+    text-align: left; /* Aliniază la stânga titlul blogului */
+}
+
+.post {
+    background-color: #002b6047; /* Fundal albastru închis pentru postare */
+    margin-bottom: 20px; /* Distanța între postări */
+    padding: 20px; /* Padding în interiorul postării */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Umbră ușoară */
+    border-radius: 10px; /* Margini rotunjite */
+}
+
+.post h2 {
+    color: #ffffff; /* Titlul postării în alb */
+    margin-bottom: 10px;
+}
+
+.post h2 a {
+    color: #ffffff; /* Linkurile din titlul postării în alb */
+    text-decoration: none; /* Fără subliniere */
+}
+
+.post-meta {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Stiluri pentru butoanele de share și like */
+.social-share {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.social-share a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f4f4f4;
+    color: #002b60;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-share a:hover {
+    background-color: #CC922F;
+    color: #ffffff;
+    border-color: #CC922F;
+}
+
+.view-counter {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design pentru Blog */
+@media (max-width: 1040px) {
+    .blog-container {
+        padding: 50px; /* Mai puțin padding pe ecranele mai mici */
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-container {
+        padding: 20px; /* Mai puțin padding pentru ecranele foarte mici */
+    }
+    
+    .post {
+        /* Ajustează sau elimină box-shadow pentru un aspect mai simplu pe mobile */
+        box-shadow: none;
+    }
+}
+
+/* end Blog */
