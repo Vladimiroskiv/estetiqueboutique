@@ -1,0 +1,74 @@
+.blog-page,
+.post-page {
+  background-color: #001c3efa; 
+  font-family: "Open Sans", sans-serif; 
+  color: #ffffff; 
+}
+
+.blog-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 200px;
+}
+
+.blog-posts {
+  margin-top: 50px;
+  color: #ffffff;
+}
+
+.blog-posts h1 {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.post {
+  background-color: #002b6047;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.post h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.post h2 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.post-meta {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+/* share si like */
+.social-share {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.social-share a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f4f4f4;
+  color: #002b60;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.social-share a:hover {
+  background-color: #cc922f;
+  color: #ffffff;
+  border-color: #cc922f;
+}
+
+.view-counter {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
