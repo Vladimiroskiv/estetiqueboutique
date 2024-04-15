@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programări | ESTETIQUEBOUTIQUE</title>
+  <link rel="stylesheet" href="programare.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Formular de Programare</h1>
+    <form id="formular-programare" class="form-programare">
+      
+      <div class="form-group">
+        <label for="nume">Nume:</label>
+        <input type="text" id="nume" name="nume" required>
+      </div>
+
+      <div class="form-group">
+        <label for="prenume">Prenume:</label>
+        <input type="text" id="prenume" name="prenume" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefon">Telefon:</label>
+        <input type="tel" id="telefon" name="telefon" required>
+      </div>
+
+      <div class="form-group">
+        <label for="servicii">Servicii:</label>
+        <select id="servicii" name="servicii" required>
+          <option value="">Selectează serviciul</option>
+          <option value="Microneedeling full face" data-price="1930">Microneedeling full face</option>
+          <option value="Microneedeling full face + corp" data-price="2500">Microneedeling full face + corp</option>
+          <option value="2 șed. Microneedeling full face" data-price="3300">2 șed. Microneedeling full face</option>
+          <option value="4 șed. Microneedeling full face" data-price="5790">4 șed. Microneedeling full face</option>         
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Pretul serviciului selectat:</label>
+        <input type="text" id="pret_serviciu" readonly>
+      </div>
+
+      <div class="form-group">
+        <label for="data">Data programării:</label>
+        <input type="date" id="data" name="data" required>
+      </div>
+
+      <div class="form-group">
+        <label for="ora">Ora programării:</label>
+        <input type="time" id="ora" name="ora" required>
+      </div>
+
+      <button type="submit" class="btn">Programează-te</button>
+    </form>
+  </div>
+  <script src="../js/formular-programare.js"></script>
+</body>
+</html>
