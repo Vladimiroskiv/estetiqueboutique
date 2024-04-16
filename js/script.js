@@ -54,23 +54,32 @@ document.addEventListener('DOMContentLoaded', function () {
     // Swipe functionality for slides
     let startX, startY, dist, threshold = 150, allowedTime = 200, elapsedTime, startTime;
 
-    slides.forEach((slide, index) => {
+    slides.forEach(slide => {
         slide.addEventListener('touchstart', function (e) {
             const touchObj = e.changedTouches[0];
+            dist = 0;
             startX = touchObj.pageX;
             startY = touchObj.pageY;
-            startTime = new Date().getTime(); 
+            startTime = new Date().getTime();
             e.preventDefault();
         }, false);
-    
+
+        slide.addEventListener('touchmove', function (e) {
+            e.preventDefault();
+        }, false);
+
         slide.addEventListener('touchend', function (e) {
             const touchObj = e.changedTouches[0];
             dist = touchObj.pageX - startX;
-            elapsedTime = new Date().getTime() - startTime; 
-            if (elapsedTime <= allowedTime) { 
+            elapsedTime = new Date().getTime() - startTime;
+            if (elapsedTime <= allowedTime) {
                 if (Math.abs(dist) >= threshold) {
-                    let swipeDirection = dist < 0 ? 'next' : 'prev'; /
-                    updateSlider(index, swipeDirection);
+                    let swipeDirection = dist < 0 ? 1 : -1;
+                    let currentIndex = Array.from(slides).indexOf(document.querySelector('.video-slide.active'));
+                    let newIndex = currentIndex + swipeDirection;
+                    if (newIndex < 0) newIndex = slides.length - 1;
+                    else if (newIndex >= slides.length) newIndex = 0;
+                    sliderNav(newIndex);
                 }
             }
             e.preventDefault();
