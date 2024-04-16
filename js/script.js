@@ -76,17 +76,6 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
         }, false);
     });
-    
-    function updateSlider(currentIndex, direction) {
-        let newIndex = direction === 'next' ? currentIndex + 1 : currentIndex - 1;
-        if (newIndex < 0) {
-            newIndex = slides.length - 1; 
-        } else if (newIndex >= slides.length) {
-            newIndex = 0;
-        }
-        sliderNav(newIndex);
-    }
-    
 
     // Toggle display for team member information
     const teamMembers = document.querySelectorAll('.team-member');
