@@ -59,7 +59,20 @@ body, html {
   font-size: 16px;
   transition: background-color 0.3s ease;
   }
+  .btn-cancel {
+    background-color: #bbb;
+    color: white;
+    margin-right: 10px; /* Adaugă spațiu între butoane */
+  }
   
+  .btn-cancel:hover {
+    background-color: #aaa;
+  }
+  
+  .btn-submit {
+    background-color: #004a99; /* sau orice culoare preferi pentru butonul principal */
+    color: white;
+  }
   .btn:hover {
   background-color: #003366;
   }
