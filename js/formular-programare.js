@@ -9,43 +9,39 @@ document.addEventListener('DOMContentLoaded', function () {
     const eroareData = document.getElementById('eroare-data');
     const eroareOra = document.getElementById('eroare-ora');
   
-    // Actualizează minimul pentru inputul de tip 'date' cu data curentă
+    
     const dataCurenta = new Date();
     inputData.min = dataCurenta.toISOString().split('T')[0];
     
-    // Funcție pentru a actualiza ora minimă în funcție de data selectată
+    
     function actualizeazaOraMinima() {
         const dataSelectata = new Date(inputData.value);
-        const acum = new Date();
-        // Dacă data selectată este aceeași cu data curentă, setează ora minimă
-        if (dataSelectata.toDateString() === acum.toDateString()) {
-          // Folosește ora curentă dacă este mai târziu decât ora de deschidere
-          let oraMinima = '09:00'; // Presupunem că ora de deschidere este 09:00
+        const acum = new Date();        
+        if (dataSelectata.toDateString() === acum.toDateString()) {          
+          let oraMinima = '09:00'; 
           let oraCurenta = acum.getHours().toString().padStart(2, '0') + ':' + acum.getMinutes().toString().padStart(2, '0');
           if (oraCurenta > oraMinima) {
             inputOra.min = oraCurenta;
           } else {
             inputOra.min = oraMinima;
           }
-        } else {
-          // Dacă este o dată viitoare, permite orice oră între orele de deschidere și închidere
+        } else {          
           inputOra.min = '09:00';
         }
     }
-      
-  
-    // Adaugă listener pentru schimbarea datei
+        
+   
     inputData.addEventListener('change', function () {
-      eroareData.textContent = ''; // Resetează mesajul de eroare
-      actualizeazaOraMinima(); // Actualizează ora minimă
+      eroareData.textContent = ''; 
+      actualizeazaOraMinima(); 
     });
   
-    // Adaugă listener pentru schimbarea orei
+    
     inputOra.addEventListener('change', function () {
-      eroareOra.textContent = ''; // Resetează mesajul de eroare
+      eroareOra.textContent = ''; 
     });
   
-    inputOra.max = '18:00'; // Setează ora maximă
+    inputOra.max = '18:00'; 
   
     // Calculul totalului de plată la schimbarea selecției de servicii
     serviciiSelect.addEventListener('change', function () {
@@ -85,12 +81,12 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   
-    // Închiderea modalului
+    
     closeModal.addEventListener('click', function () {
       modal.style.display = 'none';
     });
   
-    // Închiderea modalului dacă se face click în afara lui
+    
     window.onclick = function (event) {
       if (event.target == modal) {
         modal.style.display = 'none';

@@ -51,7 +51,7 @@ body, html {
 
 .btn, .btn-cancel {
   display: block;
-  width: 80%; /* Alege o lățime care se potrivește designului tău */
+  width: 80%; 
   margin: 10px auto;
   padding: 10px 15px;
   border: none;
