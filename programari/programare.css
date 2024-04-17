@@ -16,75 +16,125 @@ body, html {
   max-width: 600px;
   width: 100%;
   box-sizing: border-box;
-  }
+}
   
-  .form-programare {
+.form-programare {
   display: flex;
   flex-direction: column;
-  }
+}
   
-  .form-group {
+.form-group {
   margin-bottom: 15px;
-  }
+}
   
-  .form-group label {
+.form-group label {
   display: block;
   margin-bottom: 5px;
-  }
+}
   
-  .form-group input[type="text"],
-  .form-group input[type="tel"],
-  .form-group input[type="date"],
-  .form-group input[type="time"],
-  .form-group select {
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group input[type="time"],
+.form-group select {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-sizing: border-box;
-  }
+}
   
-  .form-group input[readonly] {
+.form-group input[readonly] {
   background-color: #e9ecef;
   color: #495057;
-  }
-  
-  .btn {
+}
+
+.btn, .btn-cancel {
+  display: block;
+  width: 80%; /* Alege o lățime care se potrivește designului tău */
+  margin: 10px auto;
   padding: 10px 15px;
   border: none;
-  background-color: #004a99;
-  color: #fff;
-  cursor: pointer;
   border-radius: 5px;
   font-size: 16px;
   transition: background-color 0.3s ease;
-  }
-  .btn-cancel {
-    background-color: #bbb;
-    color: white;
-    margin-right: 10px; /* Adaugă spațiu între butoane */
-  }
-  
-  .btn-cancel:hover {
-    background-color: #aaa;
-  }
-  
-  .btn-submit {
-    background-color: #004a99; /* sau orice culoare preferi pentru butonul principal */
-    color: white;
-  }
-  .btn:hover {
+  text-align: center;
+}
+
+.btn {
+  background-color: #004a99;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
   background-color: #003366;
-  }
-  
-  /* Stilizări pentru ecrane mai mici */
-  @media (max-width: 768px) {
+}
+
+.btn-cancel {
+  background-color: #ff6347;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-cancel:hover {
+  background-color: #e5533c;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 40px;
+  border: 1px solid #888;
+  width: 25%; 
+  border-radius: 10px; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+  text-align: center; 
+}
+
+.modal-content p {
+  font-size: 1.2rem; 
+  margin-bottom: 25px; 
+  color: #333; 
+  line-height: 1.6; 
+}
+
+.close-btn {
+  color: #aaaaaa;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px; 
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #000; 
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
   .container {
-  width: 90%;
-  padding: 15px;
+    width: 90%;
+    padding: 15px;
   }
   
-  .btn {
-  padding: 10px;
+  .btn, .btn-cancel {
+    padding: 10px;
+    width: 90%; 
   }
-  }
+}
